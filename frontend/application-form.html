@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,265 +12,122 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        font-family: "Inter", sans-serif;
-      }
-      .form-input {
-        width: 100%;
-        border: 1px solid #e2e8f0;
-        border-radius: 8px;
-        padding: 11px 13px;
-        font-size: 14px;
-        color: #0f172a;
-        background: #ffffff;
-        outline: none;
-        transition:
-          border-color 0.2s,
-          box-shadow 0.2s;
-      }
-      .form-input:focus {
-        border-color: #4f46e5;
-        box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.12);
-      }
-      .form-input::placeholder {
-        color: #94a3b8;
-      }
-      .field-label {
-        display: block;
-        margin-bottom: 7px;
-        color: #334155;
-        font-size: 13px;
-        font-weight: 600;
-      }
-      .required {
-        color: #dc2626;
-      }
-    </style>
   </head>
-  <body class="min-h-screen bg-slate-50 text-slate-900">
+
+  <body class="min-h-screen bg-slate-50 font-['Inter'] text-slate-900">
     <div class="flex min-h-screen">
-      <aside
-        class="hidden w-64 shrink-0 flex-col border-r border-slate-200 bg-white lg:flex"
-      >
-        
+      <aside class="hidden w-64 shrink-0 flex-col border-r border-gray-200 bg-black p-5 md:flex">
+        <div>
+          <a href="./index.html" class="mb-8 flex items-center gap-3 text-xl text-white">
+            <span class="grid size-10 shrink-0 place-items-center rounded-xl bg-indigo-600 font-bold text-white">D</span>
+            DevTrack
+          </a>
+          <p class="mb-6 text-xs text-slate-400">Your career workspace</p>
+        </div>
 
-        <aside
-          class="hidden min-h-screen w-64 shrink-0 flex-col gap-2 border-r border-gray-200 bg-black p-5 md:flex"
-        >
-          <div>
-            <a
-              href="./index.html"
-              class="mb-8 flex items-center gap-3 text-xl text-white"
-            >
-              <span
-                class="grid size-10 shrink-0 place-items-center rounded-xl bg-indigo-600 text-white"
-                aria-hidden="true"
-                >D</span
-              >
-              DevTrack
-            </a>
-            <p class="text-xs text-slate-500">Your career workspace</p>
-          </div>
+        <nav class="flex flex-col gap-2">
+          <a href="./index.html" class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium text-white transition hover:bg-gray-800">
+            <span>🏠</span> Home
+          </a>
+          <a href="./dashboard.html" class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium text-white transition hover:bg-gray-800">
+            <span>📊</span> Dashboard
+          </a>
+          <a href="./jobs.html" class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium text-white transition hover:bg-gray-800">
+            <span>💼</span> Find Jobs
+          </a>
+          <a href="./myapplication.html" aria-current="page" class="flex items-center gap-3 rounded-xl bg-indigo-600 px-4 py-3 text-sm font-semibold text-white">
+            <span>📋</span> My Applications
+          </a>
+          <a href="./savedjob.html" class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium text-white transition hover:bg-gray-800">
+            <span>🔖</span> Saved Jobs
+          </a>
+          <a href="./settings.html" class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium text-white transition hover:bg-gray-800">
+            <span>⚙️</span> Settings
+          </a>
+          <a href="./index.html" class="rounded-lg px-4 py-3 text-gray-300 transition hover:bg-red-800">
+            🚪 Log out
+          </a>
+        </nav>
 
-          <nav class="flex flex-col gap-2">
-            <a
-              href="./index.html"
-              class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium text-white transition hover:bg-gray-800"
-            >
-              <span>🏠</span> Home
-            </a>
-
-            <a
-              href="./dashboard.html"
-              aria-current="page"
-              class="flex items-center gap-3 rounded-xl  px-4 py-3 text-sm font-semibold text-white"
-            >
-              <span>📊</span> Dashboard
-            </a>
-
-            <a
-              href="./jobs.html"
-              class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium text-white transition hover:bg-gray-800"
-            >
-              <span>💼</span> Find Jobs
-            </a>
-
-            <a
-              href="./myapplication.html"
-              class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium text-white bg-indigo-600 transition "
-            >
-              <span>📋</span> My Applications
-            </a>
-
-            <a
-              href="./savedjob.html"
-              class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium text-white transition hover:bg-gray-800"
-            >
-              <span>🔖</span> Saved Jobs
-            </a>
-
-            <a
-              href="./settings.html"
-              class="flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium text-white transition hover:bg-gray-800"
-            >
-              <span>⚙️</span> Settings
-            </a>
-            <a
-              href="index.html"
-              class="rounded-lg px-4 py-3 text-gray-300 hover:bg-red-800"
-            >
-              🚪Log out
-            </a>
-          </nav>
-
-          <div class="mt-auto border-t border-gray-700 pt-4">
-            <p class="text-xs text-gray-400">© 2026 DevTrack</p>
-          </div>
-        </aside>
-
-        <div class="border-t border-slate-100 p-4">
-          <div class="flex items-center gap-3 rounded-xl bg-slate-50 p-3">
-            <div
-              class="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-100 text-sm font-bold text-indigo-700"
-            >
-              SK
-            </div>
+        <div class="mt-auto border-t border-gray-700 pt-4">
+          <div class="mb-4 flex items-center gap-3 rounded-xl bg-gray-900 p-3">
+            <div class="flex size-10 items-center justify-center rounded-full bg-indigo-100 text-sm font-bold text-indigo-700">SK</div>
             <div class="min-w-0">
-              <p class="truncate text-sm font-semibold text-slate-800">
-                Samaa Khaled
-              </p>
-              <p class="truncate text-xs text-slate-500">Job Seeker</p>
+              <p class="truncate text-sm font-semibold text-white">Samaa Khaled</p>
+              <p class="truncate text-xs text-gray-400">Job Seeker</p>
             </div>
           </div>
+          <p class="text-xs text-gray-400">© 2026 DevTrack</p>
         </div>
       </aside>
 
       <div class="flex min-w-0 flex-1 flex-col">
-        <header
-          class="sticky top-0 z-10 flex h-[72px] items-center justify-between border-b border-slate-200 bg-white px-5 sm:px-8"
-        >
+        <header class="sticky top-0 z-10 flex h-[72px] items-center justify-between border-b border-slate-200 bg-white px-5 sm:px-8">
           <div class="flex items-center gap-3">
-            <a
-              href="./index.html"
-              class="flex h-9 w-9 items-center justify-center rounded-lg bg-indigo-600 font-bold text-white lg:hidden"
-              >D</a
-            >
+            <a href="./index.html" class="flex size-9 items-center justify-center rounded-lg bg-indigo-600 font-bold text-white lg:hidden">D</a>
             <div>
               <p class="text-sm font-semibold text-slate-800">DevTrack</p>
-              <p class="hidden text-xs text-slate-500 sm:block">
-                Manage your career journey
-              </p>
+              <p class="hidden text-xs text-slate-500 sm:block">Manage your career journey</p>
             </div>
           </div>
 
           <div class="flex items-center gap-3 sm:gap-5">
-            <button
-              type="button"
-              aria-label="Notifications"
-              class="relative rounded-lg p-2 text-slate-500 transition hover:bg-slate-100 hover:text-slate-800"
-            >
+            <a href="./settings.html" aria-label="Notifications" class="relative rounded-lg p-2 text-slate-500 transition hover:bg-slate-100 hover:text-slate-800">
               ♧
-              <span
-                class="absolute right-1 top-1 h-2 w-2 rounded-full bg-indigo-600"
-              ></span>
-            </button>
+              <span class="absolute right-1 top-1 size-2 rounded-full bg-indigo-600"></span>
+            </a>
             <div class="hidden h-8 w-px bg-slate-200 sm:block"></div>
             <div class="flex items-center gap-2">
-              <div
-                class="flex h-9 w-9 items-center justify-center rounded-full bg-indigo-100 text-sm font-bold text-indigo-700"
-              >
-                SK
-              </div>
-              <span class="hidden text-sm font-medium text-slate-700 sm:block"
-                >Samaa Khaled</span
-              >
+              <div class="flex size-9 items-center justify-center rounded-full bg-indigo-100 text-sm font-bold text-indigo-700">SK</div>
+              <span class="hidden text-sm font-medium text-slate-700 sm:block">Samaa Khaled</span>
             </div>
           </div>
         </header>
 
-        <main
-          class="mx-auto w-full max-w-5xl flex-1 px-4 py-7 sm:px-8 sm:py-10"
-        >
+        <main class="mx-auto w-full max-w-5xl flex-1 px-4 py-7 sm:px-8 sm:py-10">
           <div class="mb-7">
             <div class="mb-4 flex items-center gap-2 text-sm text-slate-500">
-              <a href="./index.html" class="transition hover:text-indigo-600"
-                >Dashboard</a
-              >
+              <a href="./dashboard.html" class="transition hover:text-indigo-600">Dashboard</a>
               <span>/</span>
-              <a href="#" class="transition hover:text-indigo-600"
-                >My Applications</a
-              >
+              <a href="./myapplication.html" class="transition hover:text-indigo-600">My Applications</a>
               <span>/</span>
               <span class="font-medium text-slate-700">Add Application</span>
             </div>
 
-            <div
-              class="flex flex-col justify-between gap-4 sm:flex-row sm:items-end"
-            >
+            <div class="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
               <div>
-                <div
-                  class="mb-2 inline-flex items-center gap-2 rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-700"
-                >
-                  <span class="h-1.5 w-1.5 rounded-full bg-indigo-600"></span>
+                <div class="mb-2 inline-flex items-center gap-2 rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-700">
+                  <span class="size-1.5 rounded-full bg-indigo-600"></span>
                   APPLICATION TRACKER
                 </div>
-                <h2
-                  class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl"
-                >
-                  Add New Application
-                </h2>
+                <h1 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Add New Application</h1>
                 <p class="mt-2 max-w-2xl text-sm leading-6 text-slate-500">
-                  Keep your job search organized. Add the details of a new
-                  opportunity and track your progress.
+                  Keep your job search organized. Add the details of a new opportunity and track your progress.
                 </p>
               </div>
-              <a
-                href="./index.html"
-                class="inline-flex items-center justify-center gap-2 self-start rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-slate-600 shadow-sm transition hover:bg-slate-50 sm:self-auto"
-              >
+              <a href="./myapplication.html" class="inline-flex items-center justify-center gap-2 self-start rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-slate-600 shadow-sm transition hover:bg-slate-50 sm:self-auto">
                 <span>←</span> Back
               </a>
             </div>
           </div>
 
           <div class="mb-6 grid grid-cols-1 gap-3 sm:grid-cols-3">
-            <div
-              class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4"
-            >
-              <div
-                class="flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-50 text-lg text-indigo-600"
-              >
-                ▤
-              </div>
+            <div class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4">
+              <div class="flex size-10 items-center justify-center rounded-lg bg-indigo-50 text-lg text-indigo-600">▤</div>
               <div>
                 <p class="text-sm font-semibold text-slate-800">Job details</p>
                 <p class="text-xs text-slate-500">Company and position</p>
               </div>
             </div>
-            <div
-              class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4"
-            >
-              <div
-                class="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-50 text-lg text-blue-600"
-              >
-                ◷
-              </div>
+            <div class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4">
+              <div class="flex size-10 items-center justify-center rounded-lg bg-blue-50 text-lg text-blue-600">◷</div>
               <div>
-                <p class="text-sm font-semibold text-slate-800">
-                  Application status
-                </p>
+                <p class="text-sm font-semibold text-slate-800">Application status</p>
                 <p class="text-xs text-slate-500">Stage and key dates</p>
               </div>
             </div>
-            <div
-              class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4"
-            >
-              <div
-                class="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-50 text-lg text-emerald-600"
-              >
-                ✓
-              </div>
+            <div class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-4">
+              <div class="flex size-10 items-center justify-center rounded-lg bg-emerald-50 text-lg text-emerald-600">✓</div>
               <div>
                 <p class="text-sm font-semibold text-slate-800">Next steps</p>
                 <p class="text-xs text-slate-500">Contacts and follow-ups</p>
@@ -277,79 +135,36 @@
             </div>
           </div>
 
-          <form id="applicationForm" class="space-y-6">
-            <section
-              class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
-            >
-              <div
-                class="flex items-start gap-3 border-b border-slate-100 px-5 py-5 sm:px-7"
-              >
-                <div
-                  class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-indigo-50 font-semibold text-indigo-600"
-                >
-                  01
-                </div>
+          <form action="#" method="get" class="space-y-6">
+            <section class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+              <div class="flex items-start gap-3 border-b border-slate-100 px-5 py-5 sm:px-7">
+                <div class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-indigo-50 font-semibold text-indigo-600">01</div>
                 <div>
-                  <h3 class="font-semibold text-slate-900">Job Information</h3>
-                  <p class="mt-1 text-sm text-slate-500">
-                    Start with the company and position you're applying for.
-                  </p>
+                  <h2 class="font-semibold text-slate-900">Job Information</h2>
+                  <p class="mt-1 text-sm text-slate-500">Start with the company and position you're applying for.</p>
                 </div>
               </div>
 
-              <div
-                class="grid grid-cols-1 gap-5 px-5 py-6 sm:grid-cols-2 sm:px-7"
-              >
+              <div class="grid grid-cols-1 gap-5 px-5 py-6 sm:grid-cols-2 sm:px-7">
                 <div>
-                  <label for="company" class="field-label"
-                    >Company Name <span class="required">*</span></label
-                  >
-                  <input
-                    id="company"
-                    name="company"
-                    type="text"
-                    class="form-input"
-                    placeholder="e.g. Google"
-                    required
-                  />
+                  <label for="company" class="mb-2 block text-sm font-semibold text-slate-700">Company Name <span class="text-red-600">*</span></label>
+                  <input id="company" name="company" type="text" placeholder="e.g. Google" required class="w-full rounded-lg border border-slate-200 bg-white px-3 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-indigo-600 focus:ring-4 focus:ring-indigo-100" />
                 </div>
+
                 <div>
-                  <label for="jobTitle" class="field-label"
-                    >Job Title <span class="required">*</span></label
-                  >
-                  <input
-                    id="jobTitle"
-                    name="jobTitle"
-                    type="text"
-                    class="form-input"
-                    placeholder="e.g. Frontend Developer"
-                    required
-                  />
+                  <label for="jobTitle" class="mb-2 block text-sm font-semibold text-slate-700">Job Title <span class="text-red-600">*</span></label>
+                  <input id="jobTitle" name="jobTitle" type="text" placeholder="e.g. Frontend Developer" required class="w-full rounded-lg border border-slate-200 bg-white px-3 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-indigo-600 focus:ring-4 focus:ring-indigo-100" />
                 </div>
+
                 <div class="sm:col-span-2">
-                  <label for="jobUrl" class="field-label"
-                    >Job Posting URL</label
-                  >
-                  <input
-                    id="jobUrl"
-                    name="jobUrl"
-                    type="url"
-                    class="form-input"
-                    placeholder="https://company.com/careers/job"
-                  />
-                  <p class="mt-2 text-xs text-slate-400">
-                    Save the job link so you can find the posting later.
-                  </p>
+                  <label for="jobUrl" class="mb-2 block text-sm font-semibold text-slate-700">Job Posting URL</label>
+                  <input id="jobUrl" name="jobUrl" type="url" placeholder="https://company.com/careers/job" class="w-full rounded-lg border border-slate-200 bg-white px-3 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-indigo-600 focus:ring-4 focus:ring-indigo-100" />
+                  <p class="mt-2 text-xs text-slate-400">Save the job link so you can find the posting later.</p>
                 </div>
+
                 <div>
-                  <label for="employmentType" class="field-label"
-                    >Employment Type</label
-                  >
-                  <select
-                    id="employmentType"
-                    name="employmentType"
-                    class="form-input"
-                  >
+                  <label for="employmentType" class="mb-2 block text-sm font-semibold text-slate-700">Employment Type</label>
+                  <select id="employmentType" name="employmentType" class="w-full rounded-lg border border-slate-200 bg-white px-3 py-3 text-sm text-slate-900 outline-none transition focus:border-indigo-600 focus:ring-4 focus:ring-indigo-100">
                     <option value="">Select employment type</option>
                     <option>Full-time</option>
                     <option>Part-time</option>
@@ -357,15 +172,10 @@
                     <option>Contract</option>
                   </select>
                 </div>
+
                 <div>
-                  <label for="workArrangement" class="field-label"
-                    >Work Arrangement</label
-                  >
-                  <select
-                    id="workArrangement"
-                    name="workArrangement"
-                    class="form-input"
-                  >
+                  <label for="workArrangement" class="mb-2 block text-sm font-semibold text-slate-700">Work Arrangement</label>
+                  <select id="workArrangement" name="workArrangement" class="w-full rounded-lg border border-slate-200 bg-white px-3 py-3 text-sm text-slate-900 outline-none transition focus:border-indigo-600 focus:ring-4 focus:ring-indigo-100">
                     <option value="">Select arrangement</option>
                     <option>Remote</option>
                     <option>Hybrid</option>
@@ -375,47 +185,24 @@
               </div>
             </section>
 
-            <section
-              class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
-            >
-              <div
-                class="flex items-start gap-3 border-b border-slate-100 px-5 py-5 sm:px-7"
-              >
-                <div
-                  class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-50 font-semibold text-blue-600"
-                >
-                  02
-                </div>
+            <section class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+              <div class="flex items-start gap-3 border-b border-slate-100 px-5 py-5 sm:px-7">
+                <div class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-blue-50 font-semibold text-blue-600">02</div>
                 <div>
-                  <h3 class="font-semibold text-slate-900">
-                    Application Details
-                  </h3>
-                  <p class="mt-1 text-sm text-slate-500">
-                    Track when you applied and where you are in the process.
-                  </p>
+                  <h2 class="font-semibold text-slate-900">Application Details</h2>
+                  <p class="mt-1 text-sm text-slate-500">Track when you applied and where you are in the process.</p>
                 </div>
               </div>
 
-              <div
-                class="grid grid-cols-1 gap-5 px-5 py-6 sm:grid-cols-2 sm:px-7"
-              >
+              <div class="grid grid-cols-1 gap-5 px-5 py-6 sm:grid-cols-2 sm:px-7">
                 <div>
-                  <label for="applicationDate" class="field-label"
-                    >Application Date <span class="required">*</span></label
-                  >
-                  <input
-                    id="applicationDate"
-                    name="applicationDate"
-                    type="date"
-                    class="form-input"
-                    required
-                  />
+                  <label for="applicationDate" class="mb-2 block text-sm font-semibold text-slate-700">Application Date <span class="text-red-600">*</span></label>
+                  <input id="applicationDate" name="applicationDate" type="date" required class="w-full rounded-lg border border-slate-200 bg-white px-3 py-3 text-sm text-slate-900 outline-none transition focus:border-indigo-600 focus:ring-4 focus:ring-indigo-100" />
                 </div>
+
                 <div>
-                  <label for="stage" class="field-label"
-                    >Current Stage <span class="required">*</span></label
-                  >
-                  <select id="stage" name="stage" class="form-input" required>
+                  <label for="stage" class="mb-2 block text-sm font-semibold text-slate-700">Current Stage <span class="text-red-600">*</span></label>
+                  <select id="stage" name="stage" required class="w-full rounded-lg border border-slate-200 bg-white px-3 py-3 text-sm text-slate-900 outline-none transition focus:border-indigo-600 focus:ring-4 focus:ring-indigo-100">
                     <option value="">Select current stage</option>
                     <option value="Saved">Saved</option>
                     <option value="Applied">Applied</option>
@@ -426,15 +213,10 @@
                     <option value="Closed">Closed</option>
                   </select>
                 </div>
+
                 <div>
-                  <label for="experienceLevel" class="field-label"
-                    >Experience Level</label
-                  >
-                  <select
-                    id="experienceLevel"
-                    name="experienceLevel"
-                    class="form-input"
-                  >
+                  <label for="experienceLevel" class="mb-2 block text-sm font-semibold text-slate-700">Experience Level</label>
+                  <select id="experienceLevel" name="experienceLevel" class="w-full rounded-lg border border-slate-200 bg-white px-3 py-3 text-sm text-slate-900 outline-none transition focus:border-indigo-600 focus:ring-4 focus:ring-indigo-100">
                     <option value="">Select experience level</option>
                     <option>Internship</option>
                     <option>Entry-level</option>
@@ -443,184 +225,69 @@
                     <option>Senior</option>
                   </select>
                 </div>
+
                 <div>
-                  <label for="followUpDate" class="field-label"
-                    >Next Follow-up Date</label
-                  >
-                  <input
-                    id="followUpDate"
-                    name="followUpDate"
-                    type="date"
-                    class="form-input"
-                  />
-                  <p class="mt-2 text-xs text-slate-400">
-                    Set a reminder to follow up with the company.
-                  </p>
+                  <label for="followUpDate" class="mb-2 block text-sm font-semibold text-slate-700">Next Follow-up Date</label>
+                  <input id="followUpDate" name="followUpDate" type="date" class="w-full rounded-lg border border-slate-200 bg-white px-3 py-3 text-sm text-slate-900 outline-none transition focus:border-indigo-600 focus:ring-4 focus:ring-indigo-100" />
+                  <p class="mt-2 text-xs text-slate-400">Set a reminder to follow up with the company.</p>
                 </div>
               </div>
             </section>
 
-            <section
-              class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
-            >
-              <div
-                class="flex items-start gap-3 border-b border-slate-100 px-5 py-5 sm:px-7"
-              >
-                <div
-                  class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-50 font-semibold text-emerald-600"
-                >
-                  03
-                </div>
+            <section class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+              <div class="flex items-start gap-3 border-b border-slate-100 px-5 py-5 sm:px-7">
+                <div class="flex size-10 shrink-0 items-center justify-center rounded-xl bg-emerald-50 font-semibold text-emerald-600">03</div>
                 <div>
-                  <h3 class="font-semibold text-slate-900">Contact & Notes</h3>
-                  <p class="mt-1 text-sm text-slate-500">
-                    Keep important contact details and your personal notes in
-                    one place.
-                  </p>
+                  <h2 class="font-semibold text-slate-900">Contact & Notes</h2>
+                  <p class="mt-1 text-sm text-slate-500">Keep important contact details and your personal notes in one place.</p>
                 </div>
               </div>
 
-              <div
-                class="grid grid-cols-1 gap-5 px-5 py-6 sm:grid-cols-2 sm:px-7"
-              >
+              <div class="grid grid-cols-1 gap-5 px-5 py-6 sm:grid-cols-2 sm:px-7">
                 <div>
-                  <label for="contactName" class="field-label"
-                    >Contact Name</label
-                  >
-                  <input
-                    id="contactName"
-                    name="contactName"
-                    type="text"
-                    class="form-input"
-                    placeholder="e.g. Hiring Manager"
-                  />
+                  <label for="contactName" class="mb-2 block text-sm font-semibold text-slate-700">Contact Name</label>
+                  <input id="contactName" name="contactName" type="text" placeholder="e.g. Hiring Manager" class="w-full rounded-lg border border-slate-200 bg-white px-3 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-indigo-600 focus:ring-4 focus:ring-indigo-100" />
                 </div>
+
                 <div>
-                  <label for="contactEmail" class="field-label"
-                    >Contact Email</label
-                  >
-                  <input
-                    id="contactEmail"
-                    name="contactEmail"
-                    type="email"
-                    class="form-input"
-                    placeholder="name@company.com"
-                  />
+                  <label for="contactEmail" class="mb-2 block text-sm font-semibold text-slate-700">Contact Email</label>
+                  <input id="contactEmail" name="contactEmail" type="email" placeholder="name@company.com" class="w-full rounded-lg border border-slate-200 bg-white px-3 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-indigo-600 focus:ring-4 focus:ring-indigo-100" />
                 </div>
+
                 <div class="sm:col-span-2">
-                  <label for="interviewNotes" class="field-label"
-                    >Interview Notes</label
-                  >
-                  <textarea
-                    id="interviewNotes"
-                    name="interviewNotes"
-                    rows="3"
-                    class="form-input resize-y"
-                    placeholder="Interview schedule, preparation topics, or questions to ask..."
-                  ></textarea>
+                  <label for="interviewNotes" class="mb-2 block text-sm font-semibold text-slate-700">Interview Notes</label>
+                  <textarea id="interviewNotes" name="interviewNotes" rows="3" placeholder="Interview schedule, preparation topics, or questions to ask..." class="w-full resize-y rounded-lg border border-slate-200 bg-white px-3 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-indigo-600 focus:ring-4 focus:ring-indigo-100"></textarea>
                 </div>
+
                 <div class="sm:col-span-2">
-                  <label for="personalNotes" class="field-label"
-                    >Personal Notes</label
-                  >
-                  <textarea
-                    id="personalNotes"
-                    name="personalNotes"
-                    rows="4"
-                    class="form-input resize-y"
-                    placeholder="Add any details you want to remember about this opportunity..."
-                  ></textarea>
+                  <label for="personalNotes" class="mb-2 block text-sm font-semibold text-slate-700">Personal Notes</label>
+                  <textarea id="personalNotes" name="personalNotes" rows="4" placeholder="Add any details you want to remember about this opportunity..." class="w-full resize-y rounded-lg border border-slate-200 bg-white px-3 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-indigo-600 focus:ring-4 focus:ring-indigo-100"></textarea>
                 </div>
               </div>
             </section>
 
-            <div
-              id="successMessage"
-              class="hidden rounded-xl border border-emerald-200 bg-emerald-50 p-4 text-sm font-medium text-emerald-800"
-            >
-              Your application details passed validation. Connect the Save
-              action to your application's data storage to save the record
-              permanently.
-            </div>
-
-            <div
-              class="flex flex-col-reverse gap-3 border-t border-slate-200 pt-5 sm:flex-row sm:items-center sm:justify-between"
-            >
-              <p class="text-xs text-slate-500">
-                <span class="required">*</span> Required fields
-              </p>
+            <div class="flex flex-col-reverse gap-3 border-t border-slate-200 pt-5 sm:flex-row sm:items-center sm:justify-between">
+              <p class="text-xs text-slate-500"><span class="text-red-600">*</span> Required fields</p>
               <div class="flex flex-col gap-3 sm:flex-row">
-                <button
-                  id="resetButton"
-                  type="reset"
-                  class="rounded-lg border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-600 transition hover:bg-slate-100"
-                >
+                <button type="reset" class="rounded-lg border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-600 transition hover:bg-slate-100">
                   Clear Form
                 </button>
-                <a
-                  href="./index.html"
-                  class="rounded-lg border border-slate-200 bg-white px-5 py-3 text-center text-sm font-semibold text-slate-600 transition hover:bg-slate-100"
-                >
+                <a href="./myapplication.html" class="rounded-lg border border-slate-200 bg-white px-5 py-3 text-center text-sm font-semibold text-slate-600 transition hover:bg-slate-100">
                   Cancel
                 </a>
-                <button
-                  type="submit"
-                  class="rounded-lg bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-indigo-100"
-                >
+                <button type="submit" class="rounded-lg bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-indigo-700 focus:outline-none focus:ring-4 focus:ring-indigo-100">
                   Save Application →
                 </button>
               </div>
             </div>
           </form>
 
-          <footer
-            class="mt-10 border-t border-slate-200 py-6 text-center text-xs text-slate-400"
-          >
+          <footer class="mt-10 border-t border-slate-200 py-6 text-center text-xs text-slate-400">
             © 2026 DevTrack. Keep moving toward your next opportunity.
           </footer>
         </main>
       </div>
     </div>
-
-    <script>
-      const form = document.getElementById("applicationForm");
-      const successMessage = document.getElementById("successMessage");
-      const resetButton = document.getElementById("resetButton");
-      const applicationDate = document.getElementById("applicationDate");
-      const followUpDate = document.getElementById("followUpDate");
-
-      applicationDate.value = new Date().toISOString().slice(0, 10);
-
-      form.addEventListener("submit", function (event) {
-        event.preventDefault();
-
-        if (!form.reportValidity()) {
-          return;
-        }
-
-        if (followUpDate.value && followUpDate.value < applicationDate.value) {
-          followUpDate.setCustomValidity(
-            "Follow-up date cannot be earlier than the application date.",
-          );
-          followUpDate.reportValidity();
-          return;
-        }
-
-        followUpDate.setCustomValidity("");
-        successMessage.classList.remove("hidden");
-        successMessage.scrollIntoView({ behavior: "smooth", block: "center" });
-      });
-
-      followUpDate.addEventListener("change", function () {
-        followUpDate.setCustomValidity("");
-      });
-
-      resetButton.addEventListener("click", function () {
-        successMessage.classList.add("hidden");
-        setTimeout(function () {
-          applicationDate.value = new Date().toISOString().slice(0, 10);
-        }, 0);
-      });
-    </script>
   </body>
 </html>
+```
